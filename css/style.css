@@ -1,0 +1,104 @@
+.item-img {
+    max-height: 450px;
+}
+
+.item-title {
+    max-width: 375px;
+}
+
+.accordion-body div {
+    padding: 1em;
+}
+
+.decade-item {
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.decade-item:hover {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Zoom In #1 */
+.decade-item img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.decade-item:hover img {
+    /* -webkit-transform: scale(1.8); */
+    /* transform: scale(1.8); */
+    transform: scale(1.5) ;
+}
+
+.text_overlay {
+    text-align: center;
+    position: absolute;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.text_overlay a {
+
+    text-decoration: none;
+}
+
+.text_overlay h6 {
+   
+    margin-bottom: 1em;
+    padding: 0 15px;
+    font-size: 1.5em;
+}
+
+.text_overlay a {
+    font-weight: bold;
+
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 1em;
+
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.text_overlay span {
+    border: 4px solid white;
+    padding: 10px 10px;
+
+}
+
+.text_overlay span:hover {
+    background-color: rgba(255, 255, 255, .2);
+    /* background-color: black; */
+
+}
+
+
+.decade-item:hover .text_overlay {
+    opacity: 1;
+}
+
+
+

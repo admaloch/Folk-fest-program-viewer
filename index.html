@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+  <title>Image project</title>
+
+  <!-- css links -->
+
+  <script src="files/jquery-3.7.0.min.js"></script>
+  <script src="files/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="files/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="./css/style.css">
+
+
+
+<body>
+
+
+
+
+
+
+
+</body>
+
+<!-- main js files -->
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <!-- sidenav -->
+      <div class="col-12 col-lg-3">
+        <a id="openNavBtn" data-toggle="collapse" href="#menudropdown" role="button" aria-expanded="true"
+          aria-controls="collapseExample" class=""><i class="fa fa-fw fa-times"></i> menu</a>
+
+        <div class="collapse show" id="menudropdown" style="">
+          <div class="card card-body mt-3">
+            <ul class="nav flex-column" id="side-nav">
+              <li class="nav-item"><a class="nav-link" href="/learn/exhibits/florida-folklife/">Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="/learn/exhibits/florida-folklife/about.php">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="/discover/audio/">Audio</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="/find?advanced[0][joiner]=and&amp;advanced[0][element_id]=100&amp;advanced[0][type]=contains&amp;advanced[0][terms]=Folklife&amp;layout=1">Photographs</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="/learn/exhibits/florida-folklife/people/">Folklife
+                  People</a></li>
+              <li class="nav-item"><a class="nav-link" href="/learn/exhibits/florida-folklife/subjects/">Folklife
+                  Subjects</a></li>
+              <li class="nav-item"><a class="nav-link" href="/learn/exhibits/florida-folklife/genres/">Musical
+                  Genres</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="/learn/exhibits/florida-folklife/educational.php">Educational Units</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="/learn/exhibits/florida-folklife/folklorists.php">Folklorists</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="/learn/exhibits/florida-folklife/festival.php">Festivals</a></li>
+              <li class="nav-item"><a class="nav-link" href="/learn/exhibits/florida-folklife/links.php">Related
+                  Resources</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+
+
+        <div id="browseDiv">
+          <a
+            href="/find?keywords=Florida+Folklife&amp;advanced%5B0%5D%5Bjoiner%5D=and&amp;advanced%5B0%5D%5Belement_id%5D=240&amp;advanced%5B0%5D%5Btype%5D=is+exactly&amp;advanced%5B0%5D%5Bterms%5D=1&amp;layout=1">Browse
+            all items in the Florida Folklife Collection »</a>
+        </div><!--end browseDiv-->
+
+        <div class="dropdown mt-3">
+          <button class="btn btn-link dropdown-toggle p-0" type="button" id="dropdownMenuShareButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-share fa-fw" aria-hidden="true"></i> Share
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuShareButton">
+            <span class="dropdown-menu-arrow"></span>
+            <style>
+              @media screen and (max-width:992px) {
+                #dropdownMenuShareButton {
+                  margin-bottom: 50px;
+                }
+              }
+
+              #dropdownMenuShareButton {
+                color: #000;
+              }
+
+              #dropdownMenuShareButton::after {
+                content: none;
+              }
+
+              #dropdownMenuShareButton+.dropdown-menu {
+                background-color: #151515;
+                border: none;
+                font-size: 21px;
+                border-radius: 0;
+                /*padding: .8rem .9rem;*/
+                padding: .8rem 0.6rem;
+                top: 10px !important;
+                z-index: 1;
+                transform: translate3d(0px, 25px, 0px) !important;
+              }
+
+              /*#dropdownMenuShareButton + .dropdown-menu .list-inline-item a{
+color:#fff !important;
+}*/
+              #dropdownMenuShareButton+.dropdown-menu .dropdown-menu-arrow {
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid #151515;
+                top: -9px;
+                left: 18%;
+                position: absolute;
+              }
+
+              #dropdownMenuShareButton+.dropdown-menu .list-inline-item {
+                padding: 4px;
+              }
+
+              #dropdownMenuShareButton+.dropdown-menu .list-inline-item a {
+                color: #fff;
+                transition: color 0.3s;
+              }
+
+              .facebook:hover {
+                color: #3B5998 !important;
+              }
+
+              .twitter:hover {
+                color: #55ACEE !important;
+              }
+
+              .pinterest:hover {
+                color: #CB2027 !important;
+              }
+
+              .envelope:hover,
+              .printBtn:hover {
+                color: #ffc107 !important;
+              }
+
+              .highcontrast #dropdownMenuShareButton {
+                color: #fff;
+              }
+
+              .highcontrast #dropdownMenuShareButton+.dropdown-menu {
+                background-color: #fff;
+              }
+
+              .highcontrast #dropdownMenuShareButton+.dropdown-menu .dropdown-menu-arrow {
+                border-bottom: 10px solid #fff;
+              }
+
+              .highcontrast #dropdownMenuShareButton+.dropdown-menu .list-inline-item a {
+                color: #000;
+              }
+
+              .fontSizeMedium #dropdownMenuShareButton {
+                font-size: 1.1rem;
+              }
+
+              #___sharetoclassroom_0,
+              #___sharetoclassroom_1 {
+                vertical-align: text-top !important;
+              }
+
+              .googleclassroom {
+                padding: 1.1mm !important;
+              }
+
+              .google_tooltip {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black;
+              }
+
+              .google_tooltip .tooltiptext {
+                visibility: hidden;
+                width: max-content;
+                background-color: #bd5410;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px;
+                font-size: 13px;
+                font-weight: 600;
+                position: absolute;
+                z-index: 1;
+                bottom: 125%;
+                left: -27%;
+                margin-left: -60px;
+                opacity: 0;
+                transition: opacity 0.3s;
+              }
+
+              .google_tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #bd5410 transparent transparent transparent;
+              }
+
+              .google_tooltip:hover .tooltiptext {
+                visibility: visible;
+                opacity: 1;
+              }
+            </style>
+
+            <ul class="list-inline mb-0 text-center">
+
+              <li class="list-inline-item"><a
+                  href="https://www.facebook.com/sharer/sharer.php?u=http://www.floridamemory.com/learn/exhibits/florida-folklife/festival-programs.php?year=1953&amp;page=3"
+                  class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a
+                  href="https://twitter.com/intent/tweet?url=http://www.floridamemory.com/learn/exhibits/florida-folklife/festival-programs.php?year=1953&amp;page=3"
+                  class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i></a></li>
+
+              <li class="list-inline-item"><a href="mailto:?subject=Florida Folklife Collection - Festival Programs&amp;body=Check out Florida Memory's Florida Folklife Collection - Festival Programs 
+http://www.floridamemory.com/learn/exhibits/florida-folklife/festival-programs.php?year=1953&amp;page=3"
+                  title="Send via email" class="envelope"><i class="fa fa-envelope"></i></a></li>
+              <li class="list-inline-item"><a href="" class="printBtn" title="Print Page" onclick="PrintFunction()"><i
+                    class="fa fa-print" aria-hidden="true"></i></a></li>
+            </ul>
+
+
+
+
+
+
+
+
+            <script>
+              function PrintFunction() {
+                window.print();
+              }
+            </script>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-lg-9 ml-lg-auto" >
+       
+        <div class="accordion" id="decades-accordion">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="module" src="./js/data.js"></script>
+  <script type="module" src="./js/script.js"></script>
+
+</body>
+
+</html>

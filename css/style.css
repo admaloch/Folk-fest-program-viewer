@@ -2,8 +2,13 @@
     max-height: 450px;
 }
 
+.item-year {
+    font-size: 1.6em;
+}
+
 .item-title {
-    max-width: 375px;
+    font-size: 1.1em;
+    max-width: 350px;
 }
 
 .accordion-body div {
@@ -23,6 +28,40 @@
 }
 
 
+
+
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: #6BABBF;
+    --bs-accordion-active-color: white;
+    --bs-accordion-active-bg: #6BABBF;
+}
+
+.accordion-button:hover,
+.accordion-button:active {
+    color: white;
+    background-color: #6BABBF;
+
+}
+
+.accordion-button {
+    transition: all .3s ease-in-out;
+}
+
+
+
+.accordion-button:hover {
+    padding-left: 2em;
+}
+
+
+
+.accordion-button:hover::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+
+}
+
+
+
 .decade-item:hover {
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
@@ -39,8 +78,9 @@
 .decade-item:hover img {
     /* -webkit-transform: scale(1.8); */
     /* transform: scale(1.8); */
-    transform: scale(1.5) ;
+    transform: scale(1.8);
 }
+
 
 .text_overlay {
     text-align: center;
@@ -66,7 +106,7 @@
 }
 
 .text_overlay h6 {
-   
+
     margin-bottom: 1em;
     padding: 0 15px;
     font-size: 1.5em;
@@ -99,6 +139,3 @@
 .decade-item:hover .text_overlay {
     opacity: 1;
 }
-
-
-

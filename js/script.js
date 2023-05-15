@@ -10,7 +10,7 @@ for (let i = 0; i < decades.length; i++) {
     accordionItem.classList.add('accordion-item')
     accordionItem.innerHTML = `
     <h2 class="accordion-header" id="${decadeArrItem}">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+      <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#collapse-${decadeArrItem}" aria-expanded="false" aria-controls="collapse-${decadeArrItem}">
         ${decadeArrItem}s
       </button>
@@ -52,6 +52,7 @@ decadeDropDowns.forEach(decade => {
                 <a href="https://www.floridamemory.com/items/show/${currDecadeArr[i].url}" target="_blank">
                 <h6>${currDecadeArr[i].text}</h6>
                     <span>View ${currDecadeArr[i].type}</span>
+                    
                    
                     </a>
                 </div>
@@ -61,6 +62,9 @@ decadeDropDowns.forEach(decade => {
         }
     })
 })
+
+
+
 
 
 
